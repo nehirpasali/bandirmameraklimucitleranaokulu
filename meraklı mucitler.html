@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MERAKLI MUCİTLER ANAOKULU</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll("main section");
+    sections.forEach(section => section.style.display = "none");
+
+    const menuLinks = document.querySelectorAll(".menu a");
+
+    menuLinks.forEach(link => {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute("href").substring(1);
+        const targetSection = document.getElementById(targetId);
+
+        sections.forEach(section => section.style.display = "none");
+
+        if (targetSection) {
+          targetSection.style.display = "block";
+          window.scrollTo({ top: targetSection.offsetTop - 100, behavior: "smooth" });
+        }
+      });
+    });
+  });
+</script>
+
+  <header>
+    <div class="logo">
+      <img src="meraklı mucit logo.jpg" alt="Anaokulu Logosu">
+    </div>
+    <div class="header-content">
+      <h1>                                   MERAKLI MUCİTLER ANAOKULU</h1>
+      <nav>
+  <ul class="menu">
+    <li>
+      <a href="#okulumuz" class="ana-baslik">OKULUMUZ</a>
+      <ul class="submenu">
+        <li><a href="#kurucumuz" class="alt-baslik">KURUCUMUZ</a></li>
+        <li><a href="#kadromuz" class="alt-baslik">KADROMUZ</a></li>
+        <li><a href="#hakkinda" class="alt-baslik">OKULUMUZ HAKKINDA</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#siniflar" class="ana-baslik">SINIFLARIMIZ</a>
+      <ul class="submenu">
+        <li><a href="#A" class="alt-baslik">A</a></li>
+        <li><a href="#B" class="alt-baslik">B</a></li>
+        <li><a href="#C" class="alt-baslik">C</a></li>
+      </ul>
+    </li>
+    <li><a href="#galeri" class="ana-baslik">GALERİ</a></li>
+    <li><a href="#iletisim" class="ana-baslik">İLETİŞİM</a></li>
+  </ul>
+</nav>
+
+    </div>
+  </header>
+
+
+  <div class="slider-container">
+  <div class="slider">
+    <div class="slide active">
+      <img src="resim1.jpg" alt="Slayt 1">
+    </div>
+    <div class="slide">
+      <img src="resim2.jpg" alt="Slayt 2">
+    </div>
+    <div class="slide">
+      <img src="resim3.jpg" alt="Slayt 3">
+    </div>
+    <div class="slide">
+      <img src="resim4.jpg" alt="Slayt 4">
+    </div>
+    <div class="slide">
+      <img src="resim5.jpg" alt="Slayt 5">
+    </div>
+  </div>
+  <button class="prev" onclick="prevSlide()">❮</button>
+  <button class="next" onclick="nextSlide()">❯</button>
+</div>
+
+  <main class="container">
+    <section class="slayt">
+      <img src="IMG-20250522-WA0014.jpg" alt="Slayt 1" class="slide active">
+      <img src="slide2.jpg" alt="Slayt 2" class="slide">
+      <img src="slide3.jpg" alt="Slayt 3" class="slide">
+    </section>
+
+    <section id="okulumuz">
+      <h2>Okulumuz</h2>
+      <div id="kurucumuz">
+        <h3>Kurucumuz</h3>
+        <p>MERAKLI MUCİTLER ANAOKULUNU TANIYALIM!</p>
+
+<div id="kurucumuz" class="content-box">
+  <img src="MÜDÜR.jpg" alt="Kurucumuz" class="content-img">
+  <div class="content-text">
+     </div>
+</div>
+<P>Kurucumuz Çocuk Gelişim Uzmanı Kamer Yıldırım Şenyüz</P>
+<P> 1990 Bandırma doğumlu olan kurucumuz, ilk ve orta öğrenimini tamamladıktan sonra Lise Öğreniminde ve Üniversite Öğreniminde Çocuk Gelişimi ve Eğitimi, Çocuk Gelişimi Bölümlerini tamamlamıştır. Aynı zamanda Çocuk gelişim merkezinde 0-18 yaş arası çocuklar ile çalışmaktadır. 2017 yılında Atelier Play& Kids’i kurmuş 2019 yılında Kamer Yıldırım Şenyüz Çocuk Gelişim Merkezini ve bugün Özel Bandırma Meraklı Mucitler Anaokulunu hizmete sunmak için çalışmalarını sürdürmektedir. <P> Kurucumuz gelişimsel değerlendirmelerin yanı sıra çocuklar ile çalışan bir çok uzman ile iş birliği sağlayarak çocuklarda gelişimi destekleyici faaliyetler sürdürmektedir. Normal ve özel gereksinimli çocuklar ile çalışmaktadır. İhmal ve istismara uğramış çocuk ve kadınlara ömür boyu ücretsiz terapi/eğitim desteği vermektedir.</P> <P>Anaokulumuzda Çocuklarımızın gelişimlerini tek tek takip ederek sınıf Öğretmenleri ile işbirliği halinde ilerleyerek gelişim raporlarını Ebeveynlere sunmaktadır. Gelişiminde aksamlar yaşanan çocuklarımızın destek eğitimlerini Anaokulumuza kayıtlı çocuklarımız için ücretsiz bir şekilde devam ettirmektedir. </P>
+
+<P>Çocuk gelişimi alanında bir çok Eğitim belgesine sahip olan Kurucumuz ayrıca;</P>
+
+<P>-Dikkat tarama testleri</P>
+<P>-Gelişim tarama testleri</P>
+<P>-Otizm</P>
+<P>-Uyaran Eksikliği</P>
+<P>-Oyun Terapisi</P>
+<P>-Dil Konuşma Bozuklukları</P>
+<P>-Aile Danışmanlığı</P>
+<P>-Disleksi / Özgül Öğrenme Güçlüğü</P>
+
+<P> Gibi destek hizmetler vermektedir.</P>
+
+
+Okul öncesinde ise;
+
+Akıl zeka Oyunları
+Stem 
+Montessori
+P4c 
+Robotik Kodlama Eğitimlerini 2017 yılından bu yana sürdürmektedir.</p>
+
+
+        </div>
+      <div id="kadromuz">
+        <h3>KADROMUZ</h3>
+       
+        <div id="kadromuz" class="content-box">
+  <img src="ilknurhoca.jpg"  class="content-img">
+  <div class="content-text">
+     </div>
+</div>
+        <p>Ben okulumuz Müdürü İlknur Samancıoğlu </p>
+
+<P></P>1988de Bandırma da doğdum
+Lisede çocuk gelişim ve eğitimi bölümünu tamamladiktan  2010 yılında  Anadolu üniversitesi Okul öncesi öğretmenligi bölümünden mezun oldum. Mezun olduğum günden beri aktif olarak görev yapmaktayım. Sekiz yıldır  da okul müdürü olarak görev yapıyorum.</p>
+
+      </div>
+      <div id="kadromuz">
+       
+        <div id="kurucumuz" class="content-box">
+  <img src="MELİSAHOCA.jpg"  class="content-img">
+  <div class="content-text">
+     </div>
+</div>
+        <p>Ben okulumuz öğretmenlerinden Melisa AYHAN 1998 yılında Erzurum da doğdum.İlk öğretim ve orta öğrenimimi Erzurum da geçirdim.Erzurum Atatürk üniversitesi çocuk gelişimi bölümünden 2023 yılında mezun oldum.2022 yılından beri aktif olarak çalışmaktayım.</p>
+      </div>
+      </div>
+      
+      
+        <div id="kurucumuz" class="content-box">
+  <img src="MERVENURHOCA.jpg"  class="content-img">
+  <div class="content-text">
+     </div>
+</div>
+        <p>Ben okulumuz öğretmenlerinden Mervenur  Karacaoğlu 1998 yılında Bandırma da doğdum.İlk öğretim ve orta öğrenimimi Bandırma da geçirdim.Balıkesir üniversitesi çocuk gelişimi bölümünden 2019 yılında mezun oldum.2020 yılından beri aktif olarak çalışmaktayım.Hedefim ç mutlu merhametli sevgi dolu çocuklar yetiştirmek. </p>
+<p>Bu yolculuğumda şu ana kadar çok güzel ilerledim , bundan sonrası için de umut dolu bir gelecek bizi bekliyor...</p>
+
+ <div id="kadromuz">
+       
+        <div id="kadromuz" class="content-box">
+  <img src="HOCA.jpg"  class="content-img">
+  <div class="content-text">
+     </div>
+</div>
+        <p>Ben Özlen öğretmen; 1987 yılında İstanbul'da doğdum. Eskişehir Anadolu üniversitesisosyal hizmetler bölümü, çocuk gelişimi ve eğitimi, erken çocuklukta drama, özel eğitim alanında mezun olmuştur. 2009 yılından itibarenmesleğine devam etmekte olup eğlenerek öğrenme, yaşa-yaşat öğretisi ile Meraklı Mucitler Anaokulunda minik kalplere uzun yıllar ışık olmaya devam edeceğim.</p>
+      
+        <div id="kadromuz">
+       
+        <div id="kadromuz" class="content-box">
+  <img src="ümranhoca.jpg"  class="content-img">
+  <div class="content-text">
+     </div>
+</div>
+        <p>Ben okulumuzun öğretmenlerinden Ümran ARAS. 1997 yılında Sivas Suşehri de doğdum. Lise de ve üniversite de çocuk gelişimi bölümlerini bitirdim. 2018 de üniversiteden mezun olduktan sonra Bandırma ya taşındım. 2019’da okul öncesi öğretmeni  olarak çalışmaya başladım. Çocuklarla birlikte vakit geçirmek onlara birşeyler öğretmek bazende onlardan birşeyler öğrenmek beni çok mutlu ediyor.</p>
+
+        <div id="kadromuz">
+       
+        
+
+<div id="hakkinda">
+        <h3>OKULUMUZ HAKKINDA</h3>
+        <p>Meraklı Mucitler Anaokulu olarak, çocuklarımızın gelişiminde en kıymetli yıllar olan okul öncesi dönemi; sevgi, güven ve ilham dolu bir ortamda geçirmeleri için çalışıyoruz. Amacımız; her çocuğun kendine özgü potansiyelini keşfetmesine, sorgulamasına ve özgürce ifade etmesine olanak tanıyan bir eğitim anlayışı sunmaktır.</p>
+
+<P>Modern eğitim yöntemleri, deneyimli öğretmen kadromuz ve güvenli fiziki ortamımızla çocuklarımızın hem akademik hem sosyal-duygusal gelişimlerini destekliyoruz. Oyun temelli öğrenme yaklaşımımızla çocuklarımız hem öğreniyor hem eğleniyor.</P>
+
+<P> Bandırma’daki kampüsümüzde, sevgi dolu bir aile ortamında, geleceğin özgüvenli ve üretken bireylerini yetiştiriyoruz.</P>
+
+</p>
+      </div>
+    </section>
+
+    <section id="siniflar">
+      <h2>SINIFLARIMIZ</h2>
+      <div id="sabahci">
+        <h3>A </h3>
+        <p>...</p>
+      </div>
+      <div id="oglenci">
+        <h3>B </h3>
+        <p>...</p>
+      </div>
+      <div id="sabahci">
+        <h3>C </h3>
+        <p>...</p>
+      </div>
+    </section>
+
+    <section id="galeri">
+      <h2>GALERİ</h2>
+      <div class="gallery">
+        <img src="IMG-20250522-WA0014.jpg" >
+        <img src="IMG-20250522-WA0013.jpg" >
+        <img src="IMG-20250522-WA0015.jpg" >
+        <img src="IMG-20250522-WA0016.jpg" >
+        <img src="1.jpg" >
+        <img src="2.jpg" >
+        <img src="3.jpg" >
+        <img src="4.jpg" >
+      </div>
+    </section>
+
+    <section id="iletisim">
+      <h2>İletişim Formu</h2>
+      <form>
+        <label for="ad">Adınız:</label>
+        <input type="text" id="ad" name="ad" required>
+
+        <label for="email">E-posta:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mesaj">Mesajınız:</label>
+        <textarea id="mesaj" name="mesaj" rows="5" required></textarea>
+
+        <button type="submit">Gönder</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>İletişim: 0 (546) 249 02 44</p>
+    <p>Adres: Yeni, Kıbrıs Cd. No:9 D:A, 10200 Bandırma/Balıkesir</p>
+    <iframe 
+      src="https://www.google.com/maps?q=Yeni,+Kıbrıs+Cd.+No:9+D:A,+10200+Bandırma%2FBalıkesir&output=embed" 
+      allowfullscreen>
+    </iframe>
+    <p>Made by Nehir PAŞALI</p>
+  </footer>
+</body>
+</html>
