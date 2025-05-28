@@ -309,3 +309,14 @@ müdür.jpg, kurucumuz {
   66%  { transform: translateX(-200%); }
   100% { transform: translateX(0); }
 }
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    margin: 5px 0;
+  }
+}
