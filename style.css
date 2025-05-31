@@ -10,7 +10,7 @@ body {
   padding: 0;
 }
 body {
-  background-image: url('meraklı\ mucit\ logo.jpg');
+
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 600px;
@@ -307,7 +307,7 @@ müdür.jpg, kurucumuz {
 }
 .slider {
   width: 100%;
-  max-width: 500px; /* İstersen bu genişliği afiş boyutuna göre ayarla */
+  max-width: 800px; /* İstersen bu genişliği afiş boyutuna göre ayarla */
   aspect-ratio: 1 / 1; /* Kare alan - yüksekliği otomatik ayarlamak için */
   overflow: hidden;
   margin: 20px auto;
