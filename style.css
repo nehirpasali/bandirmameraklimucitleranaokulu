@@ -1,26 +1,35 @@
-/* Genel Ayarlar */
 body {
   margin: 0;
-  padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #fffaf0;
   color: #333;
-  background-image: url('meraklı mucit logo.jpg');
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url('meraklı\ mucit\ logo.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 600px;
   background-attachment: fixed;
+  opacity: 1;
 }
 
-/* Ana Kapsayıcı */
+
 .container {
   width: 90%;
-  max-width: 1000px;
   margin: auto;
-  padding: 20px;
 }
 
-/* HEADER */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+}
+
 header {
   display: flex;
   align-items: center;
@@ -31,33 +40,28 @@ header {
 }
 
 .logo img {
-  width: 200px;
-  height: auto;
+  height: 100px;
   margin-right: 20px;
 }
 
 .header-content {
   flex: 1;
-  text-align: center;
 }
 
 .header-content h1 {
-  margin: 10px 0;
-  font-size: 36px;
-  font-weight: bold;
+  margin: 0;
+  font-size: 32px;
   text-transform: uppercase;
   color: #d17c5e;
 }
 
-/* NAVBAR */
 nav ul.menu {
   list-style: none;
   padding: 0;
   margin: 10px 0 0;
   display: flex;
   gap: 30px;
-  justify-content: center;
-  flex-wrap: wrap;
+  position: relative;
 }
 
 nav ul.menu > li {
@@ -94,7 +98,12 @@ nav ul.menu a:hover {
   white-space: nowrap;
 }
 
-/* Slayt */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
 .slayt {
   position: relative;
   width: 100%;
@@ -118,12 +127,10 @@ nav ul.menu a:hover {
   opacity: 1;
 }
 
-/* Galeri */
 .gallery {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .gallery img {
@@ -134,7 +141,6 @@ nav ul.menu a:hover {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-/* İletişim Formu */
 form {
   display: flex;
   flex-direction: column;
@@ -162,7 +168,6 @@ form button:hover {
   background-color: #b55a45;
 }
 
-/* Footer */
 footer {
   background-color: #fff3b0;
   padding: 20px;
@@ -179,14 +184,40 @@ footer iframe {
   border: 0;
   border-radius: 8px;
 }
+/* Logo boyutunu büyüt */
+.logo img {
+  width: 200px;
+  height: auto;
+}
 
-/* İçerik Kutuları */
+/* Başlığı ortala ve büyüt */
+.header-content h1 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+main h2 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+main h3 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+müdür.jpg, kurucumuz {
+  width: 250px;
+  height: auto;
+  border-radius: 10px; /* isterseniz köşeleri yumuşatır */
+  margin-bottom: 10px;
+}
 .content-box {
   display: flex;
   align-items: flex-start;
   gap: 20px;
   margin-bottom: 40px;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* responsive için */
 }
 
 .content-img {
@@ -201,7 +232,18 @@ footer iframe {
   min-width: 300px;
 }
 
-/* Slayt Galerisi */
+/* Mobil görünüm için */
+@media (max-width: 768px) {
+  .content-box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .content-text {
+    text-align: left;
+  }
+}
 .slider-container {
   position: relative;
   max-width: 800px;
@@ -253,11 +295,29 @@ footer iframe {
 .next {
   right: 10px;
 }
+.submenu {
+  display: none;
+  list-style: none;
+  padding-left: 15px;
+  margin-top: 5px;
+}
 
-/* Otomatik Slayt */
+.menu li {
+  cursor: pointer;
+}
+.slider {
+  width: 100%;
+  max-width: 500px; /* İstersen bu genişliği afiş boyutuna göre ayarla */
+  aspect-ratio: 1 / 1; /* Kare alan - yüksekliği otomatik ayarlamak için */
+  overflow: hidden;
+  margin: 20px auto;
+  border-radius: 16px;
+  position: relative;
+}
+
 .slides {
   display: flex;
-  width: 300%;
+  width: 300%; /* 3 slayt varsa 3 x 100% */
   height: 100%;
   animation: slide 9s infinite;
 }
@@ -265,73 +325,12 @@ footer iframe {
 .slides img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: contain; /* 'cover' yerine 'contain' kullan — taşma/kırpma olmasın */
   flex-shrink: 0;
 }
-
 @keyframes slide {
   0%   { transform: translateX(0); }
   33%  { transform: translateX(-100%); }
   66%  { transform: translateX(-200%); }
   100% { transform: translateX(0); }
-}
-
-/* Responsive Düzenlemeler */
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .logo img {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-
-  nav ul.menu {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .content-box {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .content-text {
-    text-align: left;
-  }
-
-  .gallery img {
-    width: 100%;
-    height: auto;
-  }
-
-  .slayt {
-    height: 200px;
-  }
-
-  .slayt img {
-    height: 200px;
-  }
-
-  .slider-container {
-    width: 100%;
-  }
-
-  .slider {
-    flex-direction: row;
-  }
-
-  .submenu {
-    position: static;
-    box-shadow: none;
-    border: none;
-  }
-
-  .menu li:hover .submenu {
-    display: block;
-  }
 }
