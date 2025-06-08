@@ -402,3 +402,22 @@ müdür.jpg, kurucumuz {
     height: 200px;
   }
 }
+.slides {
+  display: flex;
+  width: 300%;
+  height: 100%;
+  animation: slide 9s ease infinite;
+}
+
+@keyframes slide {
+  0%     { transform: translateX(0); }
+  22.22% { transform: translateX(0); }
+
+  33.33% { transform: translateX(-100%); }
+  55.55% { transform: translateX(-100%); }
+
+  66.66% { transform: translateX(-200%); }
+  88.88% { transform: translateX(-200%); }
+
+  100%   { transform: translateX(0); }
+}
