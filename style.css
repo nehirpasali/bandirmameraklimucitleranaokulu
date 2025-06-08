@@ -334,3 +334,71 @@ müdür.jpg, kurucumuz {
   66%  { transform: translateX(-200%); }
   100% { transform: translateX(0); }
 }
+/* Mobil uyumluluk geliştirmesi */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo img {
+    margin: 0 auto 10px;
+    width: 150px;
+  }
+
+  nav ul.menu {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .slayt {
+    height: 200px;
+  }
+
+  .slayt img {
+    height: 200px;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: auto;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .slider-container {
+    width: 100%;
+  }
+
+  .slider {
+    flex-direction: column;
+  }
+
+  .slide img {
+    object-fit: contain;
+  }
+
+  .prev,
+  .next {
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  .content-img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .content-text {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  footer iframe {
+    height: 200px;
+  }
+}
